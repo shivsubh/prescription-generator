@@ -50,10 +50,14 @@ const PrescriptionForm = () => {
   const [form] = Form.useForm();
   const onFinish = (values) => {
     const url = new URL(window.location.origin);
-    url.search = new URLSearchParams({
+    const data = {
       ...values,
       date: values.date.format("DD-MM-YYYY"),
+    };
+    Object.keys(data).forEach((key) => {
+      data[key] = JSON.stringify(data[key]);
     });
+    url.search = new URLSearchParams(data);
     window.open(url, "_blank").focus();
   };
 
