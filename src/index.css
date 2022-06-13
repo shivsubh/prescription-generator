@@ -1,13 +1,109 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.page {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 3px solid #65BCC3;
+    width: 700px;
+    align-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+    color: #747474;
+    font-size: 0.8rem;
+}
+
+h1 {
+    color: #65BCC3 !important;
+    font-size: 2rem;
+}
+
+.fs-1_5 {
+    font-size: 1.5rem;
+    color: #747474;
+}
+
+.fs-0_3 {
+    margin-left: 0.3rem;
+    font-size: 0.8rem;
+    padding-top: 0.8rem;
+    color: #747474;
+}
+
+
+hr {
+    display: block;
+    height: 3px;
+    border: 0;
+    border-top: 3px solid #65BCC3;
+    margin: 1em 0;
+    padding: 0;
+    height: 0;
+}
+
+.dr-dt {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border: 0;
+    border-bottom: 1px solid #747474;
+}
+
+textarea {
+    width: 90%;
+    margin: 2rem;
+    padding: 1rem;
+    height: 15rem;
+    resize: none;
+}
+
+label {
+    color: #747474;
+    margin-top: auto;
+    margin-right: 5px;
+}
+
+.d-flex {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.end {
+    justify-content: end;
+}
+
+.space {
+    justify-content: space-between;
+}
+
+.w-5 {
+    width: 5rem !important;
+}
+
+.w-14 {
+    width: 14rem !important;
+}
+
+.w-17 {
+    width: 17rem !important;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #747474 !important;
+}
+
+#hospital {
+    text-align: center;
 }
